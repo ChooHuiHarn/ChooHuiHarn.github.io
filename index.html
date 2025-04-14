@@ -1,61 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Greek Mythology - Homepage</title>
+  <style>
+    nav ul {
+      list-style-type: none;
+    }
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    figure {
+      display: inline-block;
+      margin: 10px;
+    }
+  </style>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Gods</a>
-        <div class="dropdown-content">          
-          <a href="zeus.html">Zeus</a>
-          <a href="poseidon.html">Poseidon</a>
-          <a href="hades.html">Hades</a>
-          <a href="hera.html">Hera</a>
-          <a href="demeter.html">Demeter</a>
-          <a href="hestia.html">Hestia</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Gods</a>
+          <div class="dropdown-content">          
+            <a href="zeus.html">Zeus</a>
+            <a href="poseidon.html">Poseidon</a>
+            <a href="hades.html">Hades</a>
+            <a href="hera.html">Hera</a>
+            <a href="demeter.html">Demeter</a>
+            <a href="hestia.html">Hestia</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Greek Mythology</h1>
-  <p>Explore Greek mythology and the first generation of Olympians in classical literature and art.</p>
+  <main>
+    <h1>Greek Mythology</h1>
+    <p>Explore Greek mythology and the first generation of Olympians in classical literature and art.</p>
 
-    <div>
-        <figure>
-            <img src="zeus.jpg" alt="Zeus">
-            <figcaption><a href="zeus.html">ZEUS</a></figcaption>
-        </figure>
-        
-        <figure>
-            <img src="poseidon.jpg" alt="Poseidon">
-            <figcaption><a href="poseidon.html">POSEIDON</a></figcaption>
-        </figure>
+    <section>
+      <figure>
+        <img src="zeus.jpg" alt="Zeus">
+        <figcaption><a href="zeus.html">ZEUS</a></figcaption>
+      </figure>
+      
+      <figure>
+        <img src="poseidon.jpg" alt="Poseidon">
+        <figcaption><a href="poseidon.html">POSEIDON</a></figcaption>
+      </figure>
 
-        <figure>
-            <img src="hades.jpg" alt="Hades">
-            <figcaption><a href="hades.html">HADES</a></figcaption>
-        </figure>
+      <figure>
+        <img src="hades.jpg" alt="Hades">
+        <figcaption><a href="hades.html">HADES</a></figcaption>
+      </figure>
 
-        <figure>
-            <img src="hera.jpg" alt="Hera">
-            <figcaption><a href="hera.html">HERA</a></figcaption>
-        </figure>
+      <figure>
+        <img src="hera.jpg" alt="Hera">
+        <figcaption><a href="hera.html">HERA</a></figcaption>
+      </figure>
 
-        <figure>
-            <img src="demeter.jpg" alt="Demeter">
-            <figcaption><a href="demeter.html">DEMETER</a></figcaption>
-        </figure>
+      <figure>
+        <img src="demeter.jpg" alt="Demeter">
+        <figcaption><a href="demeter.html">DEMETER</a></figcaption>
+      </figure>
 
-        <figure>
-            <img src="hestia.jpg" alt="Hestia">
-            <figcaption><a href="hestia.html">HESTIA</a></figcaption>
-        </figure>
-    </div>
+      <figure>
+        <img src="hestia.jpg" alt="Hestia">
+        <figcaption><a href="hestia.html">HESTIA</a></figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Greek Mythology</p>
+  </footer>
+
+</body>
+</html>
 
 </body>
 </html>
