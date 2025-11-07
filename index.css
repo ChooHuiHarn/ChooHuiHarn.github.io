@@ -1,0 +1,164 @@
+:root {
+  --background: #e4e0cb;
+  --main: #ffc97c;
+  --text: #030303;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Ovo", serif;
+  text-align: center;
+}
+
+/* nav */
+header {
+  background-color: var(--main);
+  border-bottom: 4px var(--text) solid;
+  padding: 8px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 40px;
+}
+
+nav li:first-child {
+  margin-right: 25px;
+}
+
+nav li {
+  margin-left: 7px;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 25px;
+  transition: color 0.2s ease;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav ul::before {
+  content: "Greek Mythology";
+  position: absolute;
+  left: 40px;
+  font-size: 25px;
+  color: var(--text);
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+li.dropdown>.dropbtn {
+  cursor: pointer;
+}
+
+li.dropdown .dropdown {
+  display: none;
+  position: absolute;
+  background-color: var(--main);
+  border: 2px solid var(--text);
+  border-radius: 10px;
+  top: 100%;
+  right: 0;
+  min-width: 140px;
+  z-index: 10;
+  font-family: "Ovo", serif;
+}
+
+li.dropdown .dropdown a {
+  display: block;
+  padding: 10px;
+  text-align: left;
+  color: var(--text);
+}
+
+li.dropdown .dropdown a:hover {
+  background-color: var(--text);
+  color: #fff;
+}
+
+li.dropdown:hover .dropdown {
+  display: block;
+}
+
+/* main */
+main {
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 0px;
+}
+
+h1 {
+  font-family: "IM Fell English SC", serif;
+  font-size: 100.5px;
+  letter-spacing: 15px;
+  margin-bottom: -20px;
+}
+
+main p {
+  font-size: 20.3px;
+  margin-bottom: 50px;
+  font-family: "IM Fell English SC", serif;
+}
+
+h2 {
+  font-family: "IM Fell English SC", serif;
+  font-size: 95px;
+  letter-spacing: 10px;
+  margin-bottom: 30px;
+}
+
+/* gods */
+.gods div {
+  display: grid;
+  grid-template-columns: repeat(3, 323px); 
+  justify-content: center; 
+  gap: 105px 96px; 
+  align-items: start;
+  margin: 0 auto;
+}
+
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  width: 323px;
+  height: 427px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.gods figcaption a {
+  margin-top: 1px;
+  font-family: "Ovo", serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text);
+  list-style: none;
+}
+
+/* footer */
+footer {
+  background-color: var(--main);
+  border-top: 2px solid var(--text);
+  padding: 15px 0;
+  font-size: 20px;
+  margin-top: 50px;
+}
